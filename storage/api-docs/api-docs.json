@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Jose Adan Martinez Hernandez",
+        "description": "API de ejemplo para clase de desarrollo de backends y APIS",
+        "contact": {
+            "name": "Jose Adan Martinez Hernandez",
+            "url": "https://localhost/api/",
+            "email": "ia.adanmartinez@ufg.edu.sv"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/ejecutar": {
+            "get": {
+                "tags": [
+                    "ejecutar"
+                ],
+                "summary": "Este es un endpoint o metodo para obtener datos y mostrarlos al usuario",
+                "description": "Prueba de desarrollo de backend y Api desarrollado por el equipo",
+                "operationId": "ed42aafacf51d9aa570647800fcaa0e9",
+                "responses": {
+                    "200": {
+                        "description": "Se devuelven todos los registros cuando la consulta sea satisfactoria"
+                    },
+                    "500": {
+                        "description": "No se pudo realizar la ejecución al parecer hubo un error interno"
+                    }
+                }
+            }
+        }
+    }
+}
