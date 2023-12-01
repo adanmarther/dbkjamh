@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\respuestaController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\api\AuthController;
+use App\Http\Controllers\AutorController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -31,6 +32,8 @@ Route::post("/nuevo",[PaisController::class,"crearPais"]);
 Route::get("/obtener", [PaisController::class,"obtener"]);
 
 Route::get("/login", [PaisController::class,"login"]);
+
+Route::get("/autores",[AutorController::class,"obtenerAutores"]);
 
 //Route::post('/registrar',[AuthController::class,'register']);
 
